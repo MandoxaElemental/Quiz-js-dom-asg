@@ -48,9 +48,6 @@ changeColorBtn.addEventListener('click', function(e){
     colorInputLower = colorInput.toLowerCase();
     changeColor.value = '';
     boxNumber.value = '';
-    console.log(userInput);
-    console.log(colorInput);
-    console.log(colorInputLower)
     if(colorInput == '' || userInput == ''){
         alert('Please input a valid number and color')
     }
@@ -76,12 +73,12 @@ changeColorBtn.addEventListener('click', function(e){
 resetBtn.addEventListener('click', function(e){
     changeColor.value = '';
     boxNumber.value = '';
-    box1.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
-    box2.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
-    box3.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
-    box4.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
-    box5.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
-    box6.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
-    box7.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
-    box8.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
+    box1.className = 'col-3 text-center boxSize reset'
+    box2.className = 'col-3 text-center boxSize reset'
+    box3.className = 'col-3 text-center boxSize reset'
+    box4.className = 'col-3 text-center boxSize reset'
+    box5.className = 'col-3 text-center boxSize reset'
+    box6.className = 'col-3 text-center boxSize reset'
+    box7.className = 'col-3 text-center boxSize reset'
+    box8.className = 'col-3 text-center boxSize reset'
 });
