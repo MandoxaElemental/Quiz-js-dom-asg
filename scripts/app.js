@@ -40,14 +40,17 @@ let boxArray = [
 
 let userInput;
 let colorInput;
+let colorInputLower;
 
 changeColorBtn.addEventListener('click', function(e){
     userInput = boxNumber.value;
     colorInput = changeColor.value;
+    colorInputLower = colorInput.toLowerCase();
     changeColor.value = '';
     boxNumber.value = '';
     console.log(userInput);
     console.log(colorInput);
+    console.log(colorInputLower)
     if(colorInput == '' || userInput == ''){
         alert('Please input a valid number and color')
     }
@@ -55,9 +58,13 @@ changeColorBtn.addEventListener('click', function(e){
         if(numArray[i] == userInput){
             for(let j=0; j<colorArray.length; j++)
             {
-            if(colorArray[i] == colorInput)
-            boxArray[userInput-1].className = 'col-3 ' + 'text-center ' + 'boxSize ' + colorArray[i];
+                if(colorArray[j] == colorInputLower){
+                    boxArray[userInput-1].className = 'col-3 ' + 'text-center ' + 'boxSize ' + colorArray[j];
+                }
             }
+        }
+        else if(userInput > numArray.length){
+            return alert('Invalid Number: Please enter a number betwen 1-8')
         }
     }
 
