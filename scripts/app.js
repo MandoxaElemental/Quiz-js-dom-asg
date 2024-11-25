@@ -10,11 +10,39 @@ let box5 = document.getElementById('box5');
 let box6 = document.getElementById('box6');
 let box7 = document.getElementById('box7');
 let box8 = document.getElementById('box8');
-let = document.getElementById('');
+let colorArray = [
+    'red',
+    'blue',
+    'purple',
+    'brown',
+    'yellow'
+];
+let numArray = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+];
+let boxArray = [
+    box1,
+    box2,
+    box3,
+    box4,
+    box5,
+    box6,
+    box7,
+    box8
+];
 
-if(boxnumber == 1){
+let userInput;
 
-}
+changeColorBtn.addEventListener('click', function(e){
+    
+});
 
 resetBtn.addEventListener('click', function(e){
     box1.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
