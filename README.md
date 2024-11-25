@@ -12,5 +12,6 @@
 [JS DOM Assignment GitHub Repository Link](https://github.com/MandoxaElemental/Quiz-js-dom-asg)
 
 
-This has been Peer Reviewed By: 
-> Comments: 
+This has been Peer Reviewed By: Santiago Jesus Montanez
+
+- Great work, Everything works as intended and has alerts for when out of bounds.
