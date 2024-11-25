@@ -4,8 +4,7 @@
 ### 11/18/2024
 # "Challenges - JS DOM Assignment"
 ### Description: 
-- In this quiz you are to make it where you can type in the box number and change the color of the inside of the box to any of the following colors:
-- Red, Blue, Purple, Brown and Yellow
+- In this quiz you are to make it where you can type in the box number and change the color of the inside of the box to any of the following colors: Red, Blue, Purple, Brown and Yellow
 
 > Notes: 
 
