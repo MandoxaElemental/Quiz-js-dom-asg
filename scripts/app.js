@@ -61,6 +61,9 @@ changeColorBtn.addEventListener('click', function(e){
                 if(colorArray[j] == colorInputLower){
                     boxArray[userInput-1].className = 'col-3 ' + 'text-center ' + 'boxSize ' + colorArray[j];
                 }
+                else if(colorInputLower != 'red' && colorInputLower != 'blue' && colorInputLower != 'purple' && colorInputLower != 'brown' && colorInputLower != 'yellow'){
+                    return alert('Invalid Color: Options include: Red / Blue / Purple / Brown / Yellow')
+                }
             }
         }
         else if(userInput > numArray.length){
