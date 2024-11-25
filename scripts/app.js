@@ -39,12 +39,33 @@ let boxArray = [
 ];
 
 let userInput;
+let colorInput;
 
 changeColorBtn.addEventListener('click', function(e){
-    
+    userInput = boxNumber.value;
+    colorInput = changeColor.value;
+    changeColor.value = '';
+    boxNumber.value = '';
+    console.log(userInput);
+    console.log(colorInput);
+    if(colorInput == '' || userInput == ''){
+        alert('Please input a valid number and color')
+    }
+    for(let i=0; i<numArray.length; i++){
+        if(numArray[i] == userInput){
+            for(let j=0; j<colorArray.length; j++)
+            {
+            if(colorArray[i] == colorInput)
+            boxArray[userInput-1].className = 'col-3 ' + 'text-center ' + 'boxSize ' + colorArray[i];
+            }
+        }
+    }
+
 });
 
 resetBtn.addEventListener('click', function(e){
+    changeColor.value = '';
+    boxNumber.value = '';
     box1.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
     box2.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
     box3.className = 'col-3 ' + 'text-center ' + 'boxSize ' + 'reset'
